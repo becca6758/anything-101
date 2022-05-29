@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--CSS file links-->
+  <link rel="stylesheet" href="./assets/reset.css">
+  <link rel="stylesheet" href="./assets/style.css">
+  <title>Anything 101</title>
+</head>
+<body>
+  
+<!--Jumbtron containing the webpage title and the dropdown search form-->
+  <div class ="jumbotron">
+    <div class ="container">
+      <h1>Real Life 101</h1>
+      <p>A survival kit just for new grads (highschool or college) </p>
+    </div>
+
+    <form action="#">
+      <label for="cate">Categories</label>
+      <select class="form-select" id="myMenu">
+        <option value="cooking">Cooking</option>
+        <option value="studying">Study</option>
+        <option value="first-aid">First Aid</option>
+      </select>
+      <button class="btn" type="button" id="searchButton">Search</button>
+    </form>
+    
+  </div>
+
+  <!--main content of the webpage containing the cards containing buttons linking the cards to resources relating to the subject listed on the card -->
+  <main>
+    
+  <div class ="band"> 
+
+  <div class ="hide" id="cookingCard">
+      <a href="https://www.youtube.com/playlist?list=PLHGdUfaKXTB2e-O_T3shcruKi92HQ5iT2" class="card-container topics">
+        <div class="thumb">
+          <img src="https://media.istockphoto.com/photos/woman-preparing-autumn-pumpkin-meal-picture-id1257464418?b=1&k=20&m=1257464418&s=612x612&w=0&h=GMEO0gc--bel8MPdO7Fi68Wi_kXnab18M3Xd4wVEBa4=" class ="card-img" alt="cooking-img"">
+        </div>
+        <article>
+          <h1>Cooking</h1>
+          <button class="cookingBook">Book</button>
+          <button class="cookingSupply">Supply</button>
+        </article>
+        <button class ="save-button" id="cooking-save">Save</button>
+      </a>
+    </div>   
+    
+<div class = "hide" id="studyingCard">
+ <a href="https://www.youtube.com/results?search_query=study+tips+for+students" class="card-container topics">
+      <div class="thumb">
+        <img src="https://media.istockphoto.com/photos/bookshelves-and-laptops-are-placed-on-the-library-deskelearning-class-picture-id1177967778?k=20&m=1177967778&s=612x612&w=0&h=ZN9cQR6jog3wcWDsB5bUIqLRi_pLCr1Er7p6UioAQ8E=" class ="card-img" alt="studying-img">
+      </div>
+      <article>
+        <h1>Study</h1>
+        <button class="studyBook">Book</button>
+        <button class="studySupply">Supply</button>
+      </article>
+      <button class ="save-button" id ="studying-save">Save</button>
+    </a>
+  </div>  
+  
+ <div class= "hide" id="first-aidCard">
+   <div class = "first-aidCard">
+    <a href="https://www.youtube.com/playlist?list=PLdSvGi89ZQiEWsWumULLFRKHG7jXkF15T" class="card-container topics">
+      <div class="thumb">
+        <img src="https://media.istockphoto.com/photos/first-aid-articles-picture-id1207070882?k=20&m=1207070882&s=612x612&w=0&h=uqNmrAxKbXTqkA1Wiy91vlBb5_o93xcmputRsvF7xqg=" class ="card-img" alt="firstaid-img">
+      </div>
+      <article>
+        <h1>First Aid</h1>
+        <button class="firstAidBook">Book</button>
+        <button class="firstAidSupply">Supply</button>
+      </article>
+      <button class ="save-button" id="first-aid-save">Save</button>
+    </a>
+  </div> 
+    
+  </div> 
+
+    </div>
+  </main>
+
+<!--JS file links-->
+<script src="./assets/search-and-save.js"></script>
+<script src="./assets/amazon-api.js"></script>
+<script src="./assets/googlebook-api.js"></script>
+</body>
+</html>
